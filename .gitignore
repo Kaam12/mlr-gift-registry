@@ -1,0 +1,53 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+*.log
+.svn
+
+# PHP
+composer.lock
+/vendor/
+.php_cs.cache
+.phpunit.result.cache
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node & npm
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Webpack
+dist/
+build/
+
+# WordPress
+wp-config.php
+/wp-content/plugins/*/
+!/wp-content/plugins/mlr-gift-registry/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# System
+Thumbs.db
+ehthumbs.db
+.cache
+
+# Testing
+.coverage
+.phpunit.xml
+clover.xml
