@@ -24,6 +24,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Include configuration and helper functions
+require_once MLR_GIFT_REGISTRY_PATH . 'includes/constants.php';
+require_once MLR_GIFT_REGISTRY_PATH . 'includes/helpers.php';
+
 // Define plugin constants
 define( 'MLR_GIFT_REGISTRY_VERSION', '1.0.0' );
 define( 'MLR_GIFT_REGISTRY_FILE', __FILE__ );
