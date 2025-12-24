@@ -184,6 +184,21 @@ class MLR_Gift_Registry {
 	private function load_includes() {
 		// Load admin and frontend classes as needed
 		// This will be expanded with actual class files
+
+		// Load all plugin classes
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-ledger.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-list-service.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-utilities.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-woocommerce.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-user.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-webpay.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-payouts.php';
+
+        // Initialize classes
+        new MLR_Ledger();
+        new MLR_WooCommerce();
+        new MLR_Webpay();
+        new MLR_Payouts();
 	}
 }
 
