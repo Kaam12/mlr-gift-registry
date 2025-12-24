@@ -193,6 +193,10 @@ class MLR_Gift_Registry {
         require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-user.php';
         require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-webpay.php';
         require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-payouts.php';
+		        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-shortcodes.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-admin-settings.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-emails.php';
+        require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-api.php';
 
 		        // Load activator class
         require_once MLR_GIFT_REGISTRY_PATH . 'includes/class-mlr-activator.php';
@@ -207,6 +211,9 @@ class MLR_Gift_Registry {
         new MLR_WooCommerce();
         new MLR_Webpay();
         new MLR_Payouts();
+		        new MLR_Admin_Settings();
+        new MLR_Emails();
+        new MLR_API();
 	}
 }
 
